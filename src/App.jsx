@@ -1,30 +1,60 @@
-import Button from '@mui/material/Button'
-import DeleteIcon from '@mui/icons-material/Delete'
-import Typography from '@mui/material/Typography'
+
 import { useColorScheme } from '@mui/material/styles'
 
-function ModeToggle() {
+
+import InputLabel from '@mui/material/InputLabel'
+import MenuItem from '@mui/material/MenuItem'
+import FormControl from '@mui/material/FormControl'
+import Select from '@mui/material/Select'
+import Box from '@mui/material/Box'
+
+import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness'
+import LightModeIcon from '@mui/icons-material/LightMode'
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
+
+
+function ModeSelect() {
   const { mode, setMode } = useColorScheme()
+
+
+  const handleChange = (e) => {
+    const selectMode = e.target.value
+
+    setMode(selectMode)
+  }
+
   return (
-    <Button onClick={() => {
-      setMode(mode === 'light' ? 'dark' : 'light')
-    }}>
-      {mode === 'light' ? 'dark': 'light'}
-    </Button>
+    <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+      <InputLabel id="label-select-dark-light-mode">Mode</InputLabel>
+      <Select
+        labelId="label-select-dark-light-mode"
+        id="select-dark-light-mode"
+        value={mode}
+        label="Mode"
+        onChange={handleChange}
+      >
+        <MenuItem value='light'>
+          <Box sx={{ display:'flex', alignItems:'center', gap:1 }}><LightModeIcon fontSize='small'/>Light</Box>
+        </MenuItem>
+        <MenuItem value='dark'>
+          <Box sx={{ display:'flex', alignItems:'center', gap:1 }}><DarkModeOutlinedIcon fontSize='small'/> Dark</Box>
+        </MenuItem>
+        <MenuItem value='system'>
+          <Box sx={{ display:'flex', alignItems:'center', gap:1 }}>
+            <SettingsBrightnessIcon fontSize='small'/> System
+          </Box>
+        </MenuItem>
+      </Select>
+    </FormControl>
   )
 }
 
+
 function App() {
+
   return (
     <>
-      <ModeToggle />
-      <hr/>
-      <Typography variant='caption' color={'text.primary'}>Hello World</Typography>
-      <div>LocDev</div>
-      <Button variant="text">Text</Button>
-      <Button variant="contained">Container</Button>
-      <Button variant="outlined">Outlined</Button>
-      <DeleteIcon />
+      <ModeSelect/>
     </>
   )
 }
