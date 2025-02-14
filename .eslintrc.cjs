@@ -41,8 +41,8 @@ module.exports = {
     'no-restricted-imports': [
       'error',
       {
-        patterns: ['@mui/*/*/*'],
-      },
-    ],
-  },
-};
+        patterns: ['@mui/*/*/*']
+      }
+    ]
+  }
+}

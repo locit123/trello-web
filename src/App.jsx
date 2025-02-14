@@ -3,6 +3,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import TabIndicator from '@mui/material/Tabs';
 import Typography from '@mui/material/Typography'
 function App() {
+  let x = 'loc';
   return (
     <>
     <Typography variant='caption' color={'text.primary'}>Hello World</Typography>
