@@ -30,7 +30,7 @@ const Profiles = () => {
           aria-haspopup="true"
           aria-expanded={open ? 'true' : undefined}
         >
-          <Avatar sx={{ width: 32, height: 32 }} src='https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-1/474684134_642690195087042_1622963473181826086_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=4Vqs9C8EIz4Q7kNvgHtkoS3&_nc_oc=Adi6_0HTubgLTukED7LTNhggMLNIPmurj9E9mtoAjD1P6C2BR8z7ROHZ4tyBq6fIa-wcZ_igvHKB0Ejysc8JfdX6&_nc_zt=24&_nc_ht=scontent.fsgn2-4.fna&_nc_gid=AloQL-I6zDhKXz9kWbY_4qp&oh=00_AYAL2VqM-83WgSdBwl8VpOWS7PuN7K0L7dcIZZmJS9NT-g&oe=67B68314' alt='loc_dev'/>
+          <Avatar sx={{ width: 34, height: 34 }} src='https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-1/474684134_642690195087042_1622963473181826086_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=4Vqs9C8EIz4Q7kNvgHtkoS3&_nc_oc=Adi6_0HTubgLTukED7LTNhggMLNIPmurj9E9mtoAjD1P6C2BR8z7ROHZ4tyBq6fIa-wcZ_igvHKB0Ejysc8JfdX6&_nc_zt=24&_nc_ht=scontent.fsgn2-4.fna&_nc_gid=AloQL-I6zDhKXz9kWbY_4qp&oh=00_AYAL2VqM-83WgSdBwl8VpOWS7PuN7K0L7dcIZZmJS9NT-g&oe=67B68314' alt='loc_dev'/>
         </IconButton>
       </Tooltip>
       <Menu
