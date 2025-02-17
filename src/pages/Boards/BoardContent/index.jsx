@@ -2,7 +2,8 @@ import Box from '@mui/material/Box'
 
 const BoardContent = () => {
   return (
-    <Box sx={{ backgroundColor:'secondary.main',
+    <Box sx={{
+      bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#34495e' : '#1976d2'), borderBottom:'1px solid white',
       width:'100%',
       display:'flex',
       alignItems:'center',
